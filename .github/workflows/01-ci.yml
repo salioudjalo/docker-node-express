@@ -27,4 +27,4 @@ jobs:
         continue-on-error: true
 
       - name: Build Docker image
-        run: docker build -t node-app .
+        run: docker build -t salioudjalo/node-app:latest .
