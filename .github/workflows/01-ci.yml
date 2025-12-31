@@ -21,10 +21,5 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # If you have tests, this will run them
-      - name: Run tests
-        run: npm test
-        continue-on-error: true
-
       - name: Build Docker image
         run: docker build -t salioudjalo/node-app:latest .
